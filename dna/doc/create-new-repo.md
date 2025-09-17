@@ -38,15 +38,15 @@ Select `Repositories`
 
 Click `New repository`
 
-Below `Repository template` click on the drop down `No template`
+Into the `Repository name` field, enter `my-new-repo`
 
-Select the template repository `@tssuite/template-project`
+Into the `Description` field, paste `tssuite template-project description`
 
-Enter a `my-new-repo` as `name`
+Right beside `Choos visibility`, select `Public`
 
-Into the `Title` field, paste `tssuite template-project description`
+Right beside `Start with a template` select `@tssuite/template-project`
 
-Create the repo as used
+Click `Create repository`
 
 ## Setup branch rules
 
@@ -54,11 +54,11 @@ Open <https://github.com/tssuite/my-new-repo>
 
 Click `Settings`
 
-Click `Branches`
+In the `left side bar`, click `Branches`
 
 Locate `Branch Protection Rules`
 
-Click `Add branch ruleset`
+In the `upper middle`, click the `Add branch ruleset` button
 
 As `Ruleset Name` enter `Default`
 
