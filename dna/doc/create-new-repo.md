@@ -94,7 +94,8 @@ Check the following settings:
   - [x] `Require branches to be up to date before merging`
   - Click `Add checks`
   - Enter `Build` into the search field
-  - Select `Build and Test` GitHub Actions
+  - Select `Build and Test (ubuntu-latest / Node 22.x)` GitHub Actions
+  - Select `Build and Test (windows-latest / Node 22.x)` GitHub Actions
 - [x] `Block force pushes`
 
 Click `Create`
