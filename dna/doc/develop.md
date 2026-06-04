@@ -33,13 +33,13 @@ git pull
 
 ## Set pull request title
 
-Replace `Initial commit` here and below
+Replace `Update dependencies` here and below
 by your new pull request title.
 
 ## Create a feature branch
 
 ```bash
-node dna/scripts/create-branch.js "Initial commit"
+node dna/scripts/create-branch.js "Update dependencies"
 ```
 
 ## Update dependencies
@@ -65,7 +65,7 @@ In Vscode, press
 
 ```bash
 git add .
-git commit -am"Initial commit"
+git commit -am"Update dependencies"
 ```
 
 ## Increase version
@@ -96,7 +96,7 @@ node dna/scripts/push-branch.js
 ## Create a pull request
 
 ```bash
-gh pr create --base main --title "Initial commit" --body " "
+gh pr create --base main --title "Update dependencies" --body " "
 ```
 
 ## Code review
