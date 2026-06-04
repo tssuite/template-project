@@ -15,7 +15,7 @@ found in the LICENSE file in the root of this package.
 - [Setup branch rules](#setup-branch-rules)
 - [Require deleting branches after merge](#require-deleting-branches-after-merge)
 - [Checkout and open the new project](#checkout-and-open-the-new-project)
-- [Rename template-project into my-new-repo](#rename-template-project-into-my-new-repo)
+- [Rename template-project into is-ready](#rename-template-project-into-is-ready)
   - [Call rename script](#call-rename-script)
 - [Edit package.json](#edit-packagejson)
 - [Commit the initial state](#commit-the-initial-state)
@@ -26,9 +26,9 @@ found in the LICENSE file in the root of this package.
 
 In the _whole_ file:
 
-Replace `my-new-repo` by the name of your new repo
+Replace `is-ready` by the name of your new repo
 
-Replace `tssuite template-project description` by a short project description
+Replace `Wait for things to become ready` by a short project description
 
 ## Create repo
 
@@ -38,9 +38,9 @@ Select `Repositories`
 
 Click `New repository`
 
-Into the `Repository name` field, enter `my-new-repo`
+Into the `Repository name` field, enter `is-ready`
 
-Into the `Description` field, paste `tssuite template-project description`
+Into the `Description` field, paste `Wait for things to become ready`
 
 Right beside `Choos visibility`, select `Public`
 
@@ -50,7 +50,7 @@ Click `Create repository`
 
 ## Setup branch rules
 
-Open <https://github.com/tssuite/my-new-repo>
+Open <https://github.com/tssuite/is-ready>
 
 Click `Settings`
 
@@ -90,7 +90,7 @@ Check the following settings:
           - [x] `Require conversation resolution before merging`
   - Click on `Allowed merge methods:`
     - Only select `Squash`
-- [x] `Require status checks to pass`
+  - [x] `Require status checks to pass`
   - [x] `Require branches to be up to date before merging`
   - Click `Add checks`
   - Enter `Build` into the search field
@@ -104,7 +104,7 @@ When asked, Authenticate
 
 ## Require deleting branches after merge
 
-Open <https://github.com/tssuite/my-new-repo>
+Open <https://github.com/tssuite/is-ready>
 
 Click `Settings`
 
@@ -124,8 +124,8 @@ Apply the following settings:
 Checkout the project
 
 ```bash
-git clone git@github.com:tssuite/my-new-repo.git
-cd my-new-repo
+git clone git@github.com:tssuite/is-ready.git
+cd is-ready
 pnpm install
 pnpm build
 ```
@@ -142,12 +142,12 @@ Prepare a new branch and pull request
 git checkout -b rename-classes
 ```
 
-## Rename template-project into my-new-repo
+## Rename template-project into is-ready
 
 ### Call rename script
 
 ```bash
-node dna/scripts/rename-class.js template-project my-new-repo
+node dna/scripts/rename-class.js template-project is-ready
 ```
 
 ## Edit package.json
@@ -156,20 +156,20 @@ Open `package.json` and add the following changes:
 
 Reset version to `0.0.1`
 
-Set description to `tssuite template-project description`
+Set description to `Wait for things to become ready`
 
 ## Commit the initial state
 
 ```bash
 git add .
-git commit -am "Rename template-project into my-new-repo"
+git commit -am "Rename template-project into is-ready"
 ```
 
 ### Create and complete pull request
 
 ```bash
 node dna/scripts/push-branch.js
-gh pr create --base main --title "Rename template-project into my-new-repo" --body " "
+gh pr create --base main --title "Rename template-project into is-ready" --body " "
 gh pr merge --auto --squash
 node dna/scripts/wait-for-pr.js
 ```
