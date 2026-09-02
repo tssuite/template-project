@@ -38,7 +38,7 @@
     "eslint": "^10.9.1",
     "eslint-plugin-jsdoc": "^64.3.3",
     "eslint-plugin-tsdoc": "^0.5.2",
-    "globals": "^17.11.0",
+    "globals": "^17.12.0",
     "jsdoc": "^4.0.5",
     "read-pkg": "^10.1.0",
     "typescript": "~6.0.3",
