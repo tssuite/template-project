@@ -12,7 +12,7 @@ import dts from 'vite-plugin-dts';
 import pkg from './package.json';
 
 export default defineConfig({
-  plugins: [dts({ include: ['src/**/*'] })],
+  plugins: [dts({ entryRoot: 'src', include: ['src/**/*'] })],
 
   // Comment in the following files when this package should run in node.js only
   //
@@ -24,7 +24,7 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     minify: false,
-    // sourcemap: 'inline',
+    sourcemap: true,
 
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
