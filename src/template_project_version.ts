@@ -2,4 +2,4 @@
 // Kept in sync by test/template_project_version.test.ts.
 
 /** The version of the `@tssuite/template-project` package. */
-export const templateProjectVersion = '0.1.0';
+export const templateProjectVersion = '0.2.0';
