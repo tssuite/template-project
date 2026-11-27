@@ -28,8 +28,8 @@
     "updateGoldens": "cross-env UPDATE_GOLDENS=true pnpm test"
   },
   "devDependencies": {
-    "@tssuite/dna-tssuite": "^0.1.2",
-    "@tssuite/helix-js": "^0.3.0",
+    "@tssuite/dna-tssuite": "^1.0.1",
+    "@tssuite/helix-js": "^0.8.0",
     "@types/node": "^26.5.1",
     "@typescript-eslint/eslint-plugin": "^8.70.0",
     "@typescript-eslint/parser": "^8.70.0",
